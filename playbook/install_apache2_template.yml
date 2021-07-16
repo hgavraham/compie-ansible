@@ -1,0 +1,4 @@
+---
+- hosts: prod
+  roles:
+    - install_apache2_tempalte_example

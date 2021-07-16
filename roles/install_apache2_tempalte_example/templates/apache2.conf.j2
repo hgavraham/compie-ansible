@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apache2 tempalte Installtion</title>
+</head>
+<body>
+    <h1>Welcom to apache2 that installed from tempalte</h1>
+    <h3>Privat Server IP: {{ansible_default_ipv4["address"]}}</h3>
+    <h3>Server Name     : {{ansible_hostname}}</h3>
+    <h3>Server FQDN name: {{ansible_fqdn}}</h3>
+</body>
+</html>
+

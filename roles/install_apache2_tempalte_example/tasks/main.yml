@@ -1,0 +1,15 @@
+---
+# tasks file for install_apache2_tempalte_example
+- name: Install apache2
+  apt:
+    name: apache2
+    state: present
+  become: yes
+
+- name: template file to remote host
+  template:                           # Ansible template module
+    src: "apache2.conf.j2"             # This is template src i.e source location 
+    dest: "/var/www/html/index.html"   # Destination of Remote host
+  become: yes
+  notify:
+    - Restart apache2
